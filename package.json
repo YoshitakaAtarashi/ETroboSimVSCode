@@ -19,8 +19,29 @@
 				"command": "etrobosimvscodeext.helloWorld",
 				"title": "Hello World"
 			}
-		]
-	},
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+				  "id": "package-explorer",
+				  "title": "ETroboSim Explorer",
+				  "icon": "resources/etrobo_icon_gray.png"
+				}
+			]
+		},
+		"views": {
+		  "package-explorer": [
+			{
+			  "id": "package-dependencies",
+			  "name": "Dependencies"
+			},
+			{
+			  "id": "package-outline",
+			  "name": "Outline"
+			}
+		  ]
+		}
+	},	
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
